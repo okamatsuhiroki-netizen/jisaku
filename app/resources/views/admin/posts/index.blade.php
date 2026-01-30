@@ -44,7 +44,7 @@
                                 <button type="submit"
                                     class="btn btn-sm btn-danger"
                                     onclick="return confirm('本当に削除しますか？')">
-                                    削除
+                                    表示停止
                                 </button>
                             </form>
                         </td>

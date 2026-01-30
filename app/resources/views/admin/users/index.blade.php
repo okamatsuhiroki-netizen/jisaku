@@ -51,7 +51,7 @@
                                 @else
                                 <button type="submit"
                                     class="btn btn-sm btn-success">
-                                    解除
+                                    削除
                                 </button>
                                 @endif
                             </form>

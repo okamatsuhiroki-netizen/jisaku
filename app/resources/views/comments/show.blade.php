@@ -19,12 +19,12 @@
                 @csrf
 
                 <textarea
-                    name="comment"
-                    class="form-control mb-2 @error('comment') is-invalid @enderror"
+                    name="content"
+                    class="form-control mb-2 @error('content') is-invalid @enderror"
                     rows="3"
-                    placeholder="コメントを入力">{{ old('comment') }}</textarea>
+                    placeholder="コメントを入力">{{ old('content') }}</textarea>
 
-                @error('comment')
+                @error('content')
                 <div class="text-danger mb-2">{{ $message }}</div>
                 @enderror
 

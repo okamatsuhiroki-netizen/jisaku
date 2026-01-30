@@ -9,15 +9,14 @@ class AdminUserController extends Controller
 {
     public function index()
     {
-        $users = User::withCount([
-            'posts',
-            'reportedPosts',
-        ])
+        $users = User::where('role', User::ROLE_USER) // ここで一般ユーザーだけ
+            ->withCount(['posts', 'reportedPosts'])
             ->latest()
             ->paginate(20);
 
         return view('admin.users.index', compact('users'));
     }
+
 
     /**
      * ⭐ 利用停止／解除 切替

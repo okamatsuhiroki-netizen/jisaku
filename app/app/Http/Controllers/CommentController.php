@@ -25,7 +25,7 @@ class CommentController extends Controller
     {
         $request->validate(
             [
-                'comment' => 'required|string|max:500',
+                'content' => 'required|string|max:500',
             ],
             [
                 'comment.required' => 'コメントを入力してください。',
